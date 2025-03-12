@@ -1,1 +1,7 @@
-SA_COOKIE = {"bbuserid": "", "bbpassword": ""}
+import os
+from dotenv import load_dotenv
+
+SA_COOKIE = {
+    "bbuserid": os.getenv("SA_BBUSERID"),
+    "bbpassword": os.getenv("SA_BBPASSWORD"),
+}
